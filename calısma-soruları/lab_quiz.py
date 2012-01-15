@@ -1,0 +1,13 @@
+# -*- coding: cp1254 -*-
+#!/usr/bin/python
+while True :
+    isim = raw_input("isminizi giriniz:")
+    print "Merhaba %s numaraný gir."%(isim)
+    n = raw_input("numaranýzý giriniz:")
+    if n=='019' :
+        print "Bu numara Ali adlý kullanýcýya aittir."
+    elif n=='043' :
+        print "Bu numara Mehmet adlý kullanýcýya aittir."
+    elif n=='126' :
+        print "Bu numara Ayþe adlý kulnýcýya aittir."
+    break

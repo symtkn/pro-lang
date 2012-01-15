@@ -1,0 +1,26 @@
+# -*- coding: cp1254 -*-
+import math
+def mutlak_genel():
+    while True:
+        s = input("Karmaþýk sayýlar için 1,tamsayýlar için 2,ondalýk sayýlar için 3,çýkmak için 4 giriniz:")
+        if s==1 :    
+            a = input("Gerçel kýsmý giriniz:")
+            b = input("sanal kýsmý giriniz:")
+            w = math.sqrt((a**2)+(b**2))
+            print "Tamsayýnýn mutlak deðeri:",w
+        elif s==2 :
+            a = input("Tamsayýyý giriniz:")
+            if a<0 :
+                t = -1*a
+                print "Tamsayýnýn mutlak deðeri:",t
+            else :
+                print "Tamsayýnýn mutlak deðeri:",a
+        elif s==3 :
+            a = input("Ondalýklý sayýyý giriniz:")
+            if a<0 :
+                k = -1*a
+                print "Ondalýklý sayýnýn mutlak deðeri:",k
+            else :
+                print "Ondalýklý sayýnýn deðeri:",a
+        else :
+            break

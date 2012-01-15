@@ -1,0 +1,10 @@
+# -*- coding: cp1254 -*-
+def en_buyuk_basamak(sayi):
+    a = repr(sayi) #Sayýyý karakter dizisine çeviriyoruz.
+    b = 0          #Basamak deðeri en küçük sýfýr olabileceðinden,deðiþkene sýfýr deðerini atýyoruz.
+   
+    for i in a :  
+        i = int(i) #a daki öðeyi integer'a çeviriyoruz.
+        if i >= b : b = i #eðer i deki deðer b dekinden büyükse,deðeri b ye atýyoruz
+        else : pass     #Küçük deðilse de es geçiyoruz.
+    return b

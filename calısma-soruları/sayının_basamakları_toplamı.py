@@ -1,0 +1,10 @@
+# -*- coding: cp1254 -*-
+#!/usr/bin/env python
+def basamak_degeri_topla(sayi):
+    deger = 0
+    while sayi :
+        basamak = sayi % 10 #Sayýnýn modülünü alýp basamak degiskenine atadýk.
+        sayi = sayi / 10
+        deger += basamak #Basamak degerini,deger adlý deðiþkene atadýk.
+    print "toplam = %s"% (deger)
+        
