@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 class LogicGate:
     def __init__(self, n):
@@ -9,11 +10,11 @@ class LogicGate:
         self.output = self.perfomGateLogic()
         return self.output
 
-class BinaryGate(LogicGate):
-    def __init__(self, n):
-        LogicGate.__init__(self, n)
-        self.pinA = None
-        self.pinB = None
+class BinaryGate(LogicGate): #LogicGate sinifini miras alma
+    def __init__(self, n):     #Alt(cocuk) sinifin __init__() metodu
+        LogicGate.__init__(self, n)       #ust sinifin yapici metodunu cagirma
+        self.pinA = None       #ilklendirme
+        self.pinB = None       #ilklendirme      
     def getPinA(self):
         if self.pinA == None:
             return input("Pin A giris degerini" + self.getLabel() + "kapısı için gir.")
