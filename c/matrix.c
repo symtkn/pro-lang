@@ -41,7 +41,7 @@ main(int argc, char *argv[])
                                 rc_control = pthread_create(&tid, NULL, worker, data);
                                 if (rc_control) {
                                         printf("ERROR; return code from pthread_create() is %d\n", rc_control);
-                                        exit(-1);       //or exit(EXIT_FAILURE);
+                                        exit(-1);   //or exit(EXIT_FAILURE);
                                 }
                         }
                         //Make sure the parent waits for all thread to complete
