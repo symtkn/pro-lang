@@ -33,7 +33,7 @@ main(int argc, char *argv[])
         for (row = 0; row < M; row++) {
                 for (col = 0; col < N; col++) {
                         //Assign a row and column for each thread
-                        dispatcher(row,col);
+                        dispatcher(row, col);
                         pthread_t tid;
                         //Create the thread
                         for (step = 0; step < NUM_THREADS; step++) {
