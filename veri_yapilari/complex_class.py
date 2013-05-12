@@ -27,7 +27,7 @@ class Complex:
         if type(c) == type(1) or type(c) == type(1.0):
             return Complex(self.re / c * 1.0, self.imj / c * 1.0)
         new_c = Complex(c.re, c.imj * -1) * Complex(self.re, self.imj)
-        payda = (c.re ** 2 + c.imj ** 2) ** 0.5
+        payda = (c.re ** 2 + c.imj ** 2)
         return Complex(new_c.re / payda, new_c.imj / payda)
 
     def __abs__(self, c = 0):

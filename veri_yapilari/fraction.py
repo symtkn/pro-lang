@@ -14,7 +14,7 @@ class Fraction:
         newden = self.den*otherfraction.den
         return Fraction(newnum,newden)
 
-    def gcd(self):                      #en buyuk ortak bolen bulma fonksiyonus
+    def gcd(self):                      #en buyuk ortak bolen bulma fonksiyonu
         while newnum%mewden != 0:
             newnum,newden = newden, newnum%newden
         return Fraction(newnum,newden)
