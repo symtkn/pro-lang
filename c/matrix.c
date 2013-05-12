@@ -7,7 +7,8 @@
 #define N 3
 #define NUM_THREADS 5
 
-int A [M][K] = {{1, 4, 3}, {2, 5, 2}};
+//Test data
+int A [M][K] = {{1, 4, 3}, {2, 5, 2}};  
 int B [K][N] = {{8, 7, 6}, {5, 4, 3}, {1, 2, 2}};
 int C [M][N];
 
