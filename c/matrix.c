@@ -101,3 +101,8 @@ destroy(void)
 {
         free(data);
 }
+
+/*OUTPUT:
+ *      31 29 24        *
+ *      43 38 31        *
+ */
