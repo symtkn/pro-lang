@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExtraInformationActivity" >
+
+    <QuickContactBadge
+        android:id="@+id/imgBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:id="@+id/productCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgBadge"
+        android:layout_below="@+id/imgBadge"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:text="code" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/productCode"
+        android:layout_alignBottom="@+id/productCode"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="74dp"
+        android:text="price" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/productPrice"
+        android:layout_marginTop="19dp"
+        android:text="name" />
+
+</RelativeLayout>

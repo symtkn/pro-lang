@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ProductControl</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_add__list">Add_ListActivity</string>
+    <string name="title_activity_extra_information">ExtraInformationActivity</string>
+    <string name="title_activity_products">ProductsActivity</string>
+    <string name="person_name"> Name :</string>
+    <string name="person_surname"> Surname :</string>
+    <string name="email"> Email :</string>
+    <string name="password">Default Password :</string>
+    <string name="user_passwd">User Password :</string>
+    <string name="user_name">User Name :</string>
+    <string name="Login">Login</string>
+    <string name="sing_up">Sing up</string>
+    <string name="dokumantasyon"> Depodaki Ürünleri Görüntülemek İçin Tıklayın!</string>
+    <string name="ekle">Ürün Ekle</string>
+    <string name="listele"> Listele</string>
+    <string name="msj_isim">Ürün adı..</string>
+    <string name="msj_kod">Ürün kodu..</string>
+    <string name="msj_fiyat">Fiyat..</string>
+    <string name="msj_img">Resim URL bilgisi..</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_documentation">DocumentationActivity</string>
+    <string name="ayrinti">"Ayrıntılar için ImageButton'a tıklayınız!"</string>
+    <string name="content">Veritabanından gerekli bilgileri getirir</string>
+
+</resources>

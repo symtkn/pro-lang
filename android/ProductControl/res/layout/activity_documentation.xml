@@ -1,0 +1,83 @@
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ayrinti" />
+	
+	<TableRow>
+		<ImageButton android:id="@+id/imagebutton1"
+			android:src="@drawable/c"
+			android:scaleType="fitXY"
+			android:background="@null"
+			android:padding="5dip"
+			android:layout_width="wrap_content"
+			android:layout_height="90dip"/>
+		<TextView android:text="C Programming Language"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</TableRow>
+	
+	<TableRow>
+		<ImageButton android:id="@+id/imagebutton2"
+			android:src="@drawable/php"
+			android:scaleType="fitXY"
+			android:background="@null"
+			android:padding="5dip"
+			android:layout_width="wrap_content"
+			android:layout_height="90dip"/>
+		<TextView android:text="PHP"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</TableRow>
+	
+	<TableRow>
+		<ImageButton android:id="@+id/imagebutton3"
+			android:src="@drawable/java"
+			android:scaleType="fitXY"
+			android:background="@null"
+			android:padding="5dip"
+			android:layout_width="wrap_content"
+			android:layout_height="90dip"/>
+		<TextView android:text="JAVA"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</TableRow>
+	
+	<TableRow>
+		<ImageButton android:id="@+id/imagebutton4"
+			android:src="@drawable/c_c++"
+			android:scaleType="fitXY"
+			android:background="@null"
+			android:padding="5dip"
+			android:layout_width="wrap_content"
+			android:layout_height="90dip" 
+			android:contentDescription="@string/content"/>
+		
+		<TextView android:text="OOP"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</TableRow>
+
+	<TableRow>
+
+	    <ImageButton
+	        android:id="@+id/imagebutton5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="90dip"
+	        android:background="@null"
+	        android:padding="5dip"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/c#" />
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="C#" />
+	</TableRow>
+
+</TableLayout>
