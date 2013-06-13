@@ -7,7 +7,8 @@
 #define N 3
 #define NUM_THREADS 5
 
-int A [M][K] = {{1, 4, 3}, {2, 5, 2}};
+//Test data
+int A [M][K] = {{1, 4, 3}, {2, 5, 2}};  
 int B [K][N] = {{8, 7, 6}, {5, 4, 3}, {1, 2, 2}};
 int C [M][N];
 
@@ -32,7 +33,7 @@ main(int argc, char *argv[])
         for (row = 0; row < M; row++) {
                 for (col = 0; col < N; col++) {
                         //Assign a row and column for each thread
-                        dispatcher(row,col);
+                        dispatcher(row, col);
                         pthread_t tid;
                         //Create the thread
                         for (step = 0; step < NUM_THREADS; step++) {
@@ -40,7 +41,7 @@ main(int argc, char *argv[])
                                 rc_control = pthread_create(&tid, NULL, worker, data);
                                 if (rc_control) {
                                         printf("ERROR; return code from pthread_create() is %d\n", rc_control);
-                                        exit(-1);
+                                        exit(-1);   //or exit(EXIT_FAILURE);
                                 }
                         }
                         //Make sure the parent waits for all thread to complete
@@ -100,3 +101,8 @@ destroy(void)
 {
         free(data);
 }
+
+/*OUTPUT:
+ *      31 29 24        *
+ *      43 38 31        *
+ */
