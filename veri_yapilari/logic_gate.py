@@ -3,12 +3,12 @@
 class LogicGate:
     def __init__(self, n):
         self.label = n
-        self.output = None
+        self.Output = None
     def getLabel(self):
         return self.label
     def getOutput(self):
-        self.output = self.perfomGateLogic()
-        return self.output
+        self.Output = self.performGateLogic()
+        return self.Output
 
 class BinaryGate(LogicGate): #LogicGate sinifini miras alma
     def __init__(self, n):     #Alt(cocuk) sinifin __init__() metodu
